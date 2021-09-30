@@ -1,10 +1,12 @@
 public class TicTacToeGame {
     public static void main(String[] args) {
+        System.out.println("Welcome to the TicTacToeGame");
 
         //char[] board = {' ','0','0','0','0','0','0','0','0','0'};
 
 
     }
+    char[] board = {' ','0','0','0','0','0','0','0','0','0'};
     /*   creating char array board
 
      */
