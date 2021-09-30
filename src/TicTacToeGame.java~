@@ -5,7 +5,7 @@ public class TicTacToeGame {
 
 
     }
-    public static void board(){
+    public void board(){
         char[] board = {' ','0','0','0','0','0','0','0','0','0'};
     }
 }
