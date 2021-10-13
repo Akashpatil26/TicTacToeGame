@@ -64,13 +64,16 @@ public class TicTacToegame {
         //checking if player has won
         if (hasWon(board)=='x'){
             System.out.println(player+ "has won!!");
+            gameEnded=true;
         }
         else if(hasWon(board)=='O'){
             System.out.println(computer+ "has won!!");
+            gameEnded=true;
         }
         else {
             if (hasTied(board)){
                 System.out.println("It is a tie");
+                gameEnded=true;
             }else {
                 isPlayer=!isPlayer;
 
@@ -78,6 +81,7 @@ public class TicTacToegame {
         }
 
         }
+        showBoard(board);
 
     }
 
