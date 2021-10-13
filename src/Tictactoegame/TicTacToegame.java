@@ -23,12 +23,21 @@ public class TicTacToegame {
         }
 
         boolean isPlayer=true;
+        boolean gameEnded = false;
+        showBoard(board);
         char symbol=' ';
         if (isPlayer) {
             symbol='x';
         } else {
             symbol='O';
         }
+        //printing Toss turns
+        Random random = new Random();
+        if (Math.random()>0.5)
+            System.out.println(player);
+        else
+            System.out.println(computer);
+
         int row=0;
         int column=0;
         /*getting row and column from user
