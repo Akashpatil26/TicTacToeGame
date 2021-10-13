@@ -23,7 +23,10 @@ public class TicTacToegame {
         }
 
         boolean isPlayer=true;
+
         boolean gameEnded = false;
+        while(!gameEnded)
+        {
         showBoard(board);
         char symbol=' ';
         if (isPlayer) {
@@ -69,9 +72,13 @@ public class TicTacToegame {
             if (hasTied(board)){
                 System.out.println("It is a tie");
             }else {
+                isPlayer=!isPlayer;
 
             }
         }
+
+        }
+
     }
 
     private static void showBoard(char[][] board) {
